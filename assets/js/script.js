@@ -172,7 +172,7 @@ $(document).on('submit','#formStudents',function (e) {
                 e.preventDefault();
         
                     var widgetId1 = grecaptcha.render('recaptcha_form', {
-                        'sitekey': '6LdA4bsUAAAAAMGN5QasHMd8yOj2KvguT_d2sH0y',
+                        'sitekey': '**********',
                         'callback': onSubmit1,
                         'size': "invisible"
                     });
