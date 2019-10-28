@@ -85,7 +85,7 @@ class Users extends AbstractManager
     {
         $size = empty($item['attributes']['size']) ? '' : " {$item['attributes']['size']}";
         $color = empty($item['attributes']['color']) ? '' : "{$item['attributes']['color']} ";
-        $city = $item['id'] == 99 ? $POST['_city'] : '';
+        //$city = $item['id'] == 99 ? $POST['_city'] : '';
         // prepared request
         $statement = $this->pdo->prepare("INSERT INTO orders (`id_user`, `id_product`, `product_designation`, `city`, `quantity`, `color`, `size`, `price`)
         VALUES (:id_user, :id_product, :product_designation, :city, :quantity, :color, :size, :price)");
@@ -94,7 +94,7 @@ class Users extends AbstractManager
             ':id_user' => $idFirstStudent,
             ':id_product' => $item['id'],
             ':product_designation' => $infosProduct['p_description'],
-            ':city' => $city,
+            ':city' => $POST['_city'],
             ':quantity' => $item['quantity'],
             'color' => $color,
             ':size' => $size,

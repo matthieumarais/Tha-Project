@@ -16,7 +16,7 @@
             <div class="col-md-8 mx-auto">
                 <div class="form-group">
                     <label for="">เลือกจังหวัดที่จะเข้าร่วมสัมนา (City selection)</label>
-                    <select name="_city" id="city" class="form-control"  data-validation="" data-validation-error-msg=" ">
+                    <select name="_city" id="city" class="form-control"  data-validation="required" data-validation-error-msg=" ">
                         <option data-pixel="" value="">เลือกจังหวัด (Select city)</option>
                         <option data-pixel="643456952848311" value="ประจวบคีรีขันธ์ (Prachuap)">16-Nov-2019 | ประจวบคีรีขันธ์ (Prachuap)</option>
                         <option data-pixel="2611079895580215" value="ชลบุรี (Chonburi)">17-Nov-2019 | ชลบุรี (Chonburi)</option>

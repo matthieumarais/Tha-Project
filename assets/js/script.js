@@ -68,7 +68,7 @@ $(document).ready(function () {
 
         // Cart part
         if ($(this).val() > 0) {
-            $('#city').attr('data-validation', 'required');
+            
             $.ajax({
                 type: "POST",
                 url: "ajax/ajax-cart.php",
@@ -85,7 +85,7 @@ $(document).ready(function () {
                 }
             });
         } else {
-            $('#city').attr('data-validation', '');
+            
             deleteSeatIntoCart();
         }
 
