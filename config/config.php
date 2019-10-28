@@ -31,7 +31,7 @@ $allItems = $cart->getItems();
 
 if (isset($_GET['page']) && $_GET['page'] == 'goodbye') {
     if (isset($_POST['_validForm'])) {
-        $secret = '6LdA4bsUAAAAAIPxcaolFiiT6bTO-R8h-ny8Pwyi';
+        $secret = '********';
         $response = $_POST['g-recaptcha-response'];
 
         $api_url = "https://www.google.com/recaptcha/api/siteverify?secret=" . $secret . "&response=" . $response;
