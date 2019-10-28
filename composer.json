@@ -1,0 +1,9 @@
+{
+    "name": "C:/Users/Mqtthieu/Desktop/thai_project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "class/"
+        }
+    },
+    "require": {}
+}
